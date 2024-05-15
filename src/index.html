@@ -19,16 +19,34 @@
       class="w-[120ch] max-w-full rounded-3xl shadow-lg print:contents"
       src="CV.md"
     >
-      <template data-prepend>
+      <template data-append>
         <style>
-          .markdown-body {
-            padding: 4ch 4ch 6ch;
-            min-height: 100%;
-          }
-
           @media print {
             * {
               color: black !important;
+            }
+
+            .no-print {
+              display: none;
+            }
+
+            .markdown-body {
+              font-size: 8pt;
+            }
+
+            .badge-container > :not(:last-child)::after {
+              content: ", ";
+            }
+          }
+
+          @media screen {
+            .print-only {
+              display: none;
+            }
+
+            .markdown-body {
+              padding: 4ch 4ch 6ch;
+              min-height: 100%;
             }
           }
         </style>
