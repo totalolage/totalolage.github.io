@@ -18,7 +18,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "prettier --write './src/**/*.{html,js,jsx,ts,tsx}'"
+    "format": "prettier --write './src/**/*.{html,css,md}'"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
