@@ -1,0 +1,84 @@
+- Trask/Team8 (agency)
+  - Publically traded US corporation
+    - Ecommerce web [FE + BF IC, team of 6]
+      - NX
+      - React
+      - Next
+      - TS
+      - Tailwind
+      - GraphQL (Apollo)
+      - Storybook
+      - Jest
+      - React Testing Library
+      - React Hook Form
+      - Zod
+      - Radix UI
+      - i18next
+      - Zustand
+
+
+- Thimble (agency)
+  - Circularo
+    - app.circularo.com [FE + BF solo] (mobile, EOL)
+      - Next
+      - React
+      - TS
+      - Emotion
+      - React Hook Form
+      - React Query
+      - Zod
+      - Zustand
+      - Axios
+      - i18next
+      - Next PWA
+      - React PDF
+      - React virtuoso
+      - Slate
+      - Yup
+  - Unikol
+    - unikol.cz [Fullstack medior, team of 3]
+      - Next
+      - React
+      - TS
+      - Styled Components
+      - i18next
+      - React Hook Form
+  - Galerie Gema
+    - gemagalerie.cz [solo] (unreleased)
+      - Next
+      - React
+      - TS
+      - Emotion
+      - GraphQL (Apollo)
+      - SocketIO
+      - Strapi
+      - i18next
+      - React Spring
+      - React Hook Form
+      - Yup
+  - "Chytré Spolubydlení" [Fullstack junior, team of 2] (internal, unfinished)
+    - Next
+    - React
+    - TS
+    - Styled Components
+    - GraphQL (Apollo)
+    - React Spring
+    - React Hook Form
+    - Yup
+    - Axios
+    - Express
+    - TypeORM
+    - PosgreSQL
+  - thimble.cz v2 [solo] (unreleased)
+    - Next
+    - React
+    - TS
+    - Styled Components
+
+- AtomRTC
+  - SetriChytre.cz [solo] (EOL)
+    - React (JS class components)
+    - Styled Components
+  - LiveSupp.com [frontend IC, team of 3-5]
+    - React (JS class components)
+
