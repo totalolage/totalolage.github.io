@@ -12,23 +12,25 @@
     <title>Filip Kalný | Resume</title>
   </head>
 
-  <body class="flex justify-center bg-slate-50 px-4 py-6 dark:bg-slate-800 print:contents">
-    <zero-md class="w-[80ch] max-w-full rounded-3xl shadow-lg print:contents" src="CV.md">
+  <body
+    class="flex justify-center bg-slate-50 px-4 py-6 dark:bg-slate-800 print:contents"
+  >
+    <zero-md
+      class="w-[80ch] max-w-full rounded-3xl shadow-lg print:contents"
+      src="CV.md"
+    >
       <template data-prepend>
         <style>
           .markdown-body {
-            padding: 2ch 3ch 4ch;
+            padding: 4ch 4ch 6ch;
           }
-          
+
           @media print {
             * {
               color: black !important;
             }
           }
         </style>
-        <script type="text/markdown">
-          This is the fall-back markdown that will **only show** when `src` is falsy.
-        </script>
       </template>
     </zero-md>
   </body>
