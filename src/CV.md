@@ -1,4 +1,5 @@
 - Trask/Team8 (agency)
+
   - Publically traded US corporation
     - Ecommerce web [FE + BF IC, team of 6]
       - NX
@@ -16,8 +17,8 @@
       - i18next
       - Zustand
 
-
 - Thimble (agency)
+
   - Circularo
     - app.circularo.com [FE + BF solo] (mobile, EOL)
       - Next
@@ -81,4 +82,3 @@
     - Styled Components
   - LiveSupp.com [frontend IC, team of 3-5]
     - React (JS class components)
-
