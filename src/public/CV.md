@@ -1,7 +1,22 @@
+# Filip Kalný
+[
+    ![Mail to filip@kalny.net](https://img.shields.io/badge/filip%40kalny.net-%23CF4462?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idy02IGgtNiI%2BCiAgPHBhdGggZD0iTTEuNSA4LjY3djguNThhMyAzIDAgMCAwIDMgM2gxNWEzIDMgMCAwIDAgMy0zVjguNjdsLTguOTI4IDUuNDkzYTMgMyAwIDAgMS0zLjE0NCAwTDEuNSA4LjY3WiIgLz4KICA8cGF0aCBkPSJNMjIuNSA2LjkwOFY2Ljc1YTMgMyAwIDAgMC0zLTNoLTE1YTMgMyAwIDAgMC0zIDN2LjE1OGw5LjcxNCA1Ljk3OGExLjUgMS41IDAgMCAwIDEuNTcyIDBMMjIuNSA2LjkwOFoiIC8%2BCjwvc3ZnPgo%3D)
+](mailto:filip@kalny.net)
+[
+    ![Phone +420605501785](https://img.shields.io/badge/%2B420%20605%20501%20785-%23CF4462?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idy02IGgtNiI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMS41IDQuNWEzIDMgMCAwIDEgMy0zaDEuMzcyYy44NiAwIDEuNjEuNTg2IDEuODE5IDEuNDJsMS4xMDUgNC40MjNhMS44NzUgMS44NzUgMCAwIDEtLjY5NCAxLjk1NWwtMS4yOTMuOTdjLS4xMzUuMTAxLS4xNjQuMjQ5LS4xMjYuMzUyYTExLjI4NSAxMS4yODUgMCAwIDAgNi42OTcgNi42OTdjLjEwMy4wMzguMjUuMDA5LjM1Mi0uMTI2bC45Ny0xLjI5M2ExLjg3NSAxLjg3NSAwIDAgMSAxLjk1NS0uNjk0bDQuNDIzIDEuMTA1Yy44MzQuMjA5IDEuNDIuOTU5IDEuNDIgMS44MlYxOS41YTMgMyAwIDAgMS0zIDNoLTIuMjVDOC41NTIgMjIuNSAxLjUgMTUuNDQ4IDEuNSA2Ljc1VjQuNVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgLz4KPC9zdmc+Cg==)
+](tel:+420605501785)
+[
+    ![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=flat&logo=linkedin)
+](https://www.linkedin.com/in/filip-kalny/)
+[
+    ![GitHub](https://img.shields.io/badge/GitHub-%23181717?style=flat&logo=github)
+](https://github.com/totalolage)
+
+
 - Trask/Team8 (agency)
 
   - Publically traded US corporation
-    - Ecommerce web [FE + BF IC, team of 6]
+    - E-commerce web [FE + BF IC, team of 6]
       - NX
       - React
       - Next
