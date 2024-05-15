@@ -51,6 +51,8 @@
 ![Docker](https://img.shields.io/badge/Docker-%232496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-%23269539?style=for-the-badge&logo=nginx&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white)
+![NX](https://img.shields.io/badge/NX-%23000000?style=for-the-badge&logo=nx&logoColor=white)
+![TurboRepo](https://img.shields.io/badge/TurboRepo-%23000000?style=for-the-badge&logo=turborepo&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-%23000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230080FF?style=for-the-badge&logo=digitalocean&logoColor=white)
 ![NeoVim](https://img.shields.io/badge/NeoVim-%2357A143?style=for-the-badge&logo=neovim&logoColor=white)
@@ -63,83 +65,18 @@
 
   - Publically traded US corporation
     - E-commerce web [FE + BF IC, team of 6]
-      - NX
-      - React
-      - Next
-      - TS
-      - Tailwind
-      - GraphQL (Apollo)
-      - Storybook
-      - Jest
-      - React Testing Library
-      - React Hook Form
-      - Zod
-      - Radix UI
-      - i18next
-      - Zustand
 
 - Thimble (agency)
 
   - Circularo
     - app.circularo.com [FE + BF solo] (mobile, EOL)
-      - Next
-      - React
-      - TS
-      - Emotion
-      - React Hook Form
-      - React Query
-      - Zod
-      - Zustand
-      - Axios
-      - i18next
-      - Next PWA
-      - React PDF
-      - React virtuoso
-      - Slate
-      - Yup
   - Unikol
     - unikol.cz [Fullstack medior, team of 3]
-      - Next
-      - React
-      - TS
-      - Styled Components
-      - i18next
-      - React Hook Form
   - Galerie Gema
     - gemagalerie.cz [solo] (unreleased)
-      - Next
-      - React
-      - TS
-      - Emotion
-      - GraphQL (Apollo)
-      - SocketIO
-      - Strapi
-      - i18next
-      - React Spring
-      - React Hook Form
-      - Yup
   - "Chytré Spolubydlení" [Fullstack junior, team of 2] (internal, unfinished)
-    - Next
-    - React
-    - TS
-    - Styled Components
-    - GraphQL (Apollo)
-    - React Spring
-    - React Hook Form
-    - Yup
-    - Axios
-    - Express
-    - TypeORM
-    - PosgreSQL
   - thimble.cz v2 [solo] (unreleased)
-    - Next
-    - React
-    - TS
-    - Styled Components
 
 - AtomRTC
   - SetriChytre.cz [solo] (EOL)
-    - React (JS class components)
-    - Styled Components
   - LiveSupp.com [frontend IC, team of 3-5]
-    - React (JS class components)
