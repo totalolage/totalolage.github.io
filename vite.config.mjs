@@ -9,4 +9,5 @@ export default defineConfig({
     emptyOutDir: true
   },
   root: "src",
+  assetsInclude: ["**/*.md"],
 });

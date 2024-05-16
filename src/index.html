@@ -16,8 +16,8 @@
     class="flex justify-center bg-slate-50 px-4 py-6 dark:bg-slate-800 print:contents"
   >
     <zero-md
+      id="cv"
       class="w-[120ch] max-w-full rounded-3xl shadow-lg print:contents"
-      src="CV.md"
     >
       <template data-append>
         <style>
@@ -52,5 +52,10 @@
         </style>
       </template>
     </zero-md>
+
+    <script type="module">
+      import cv from "./CV.md";
+      document.getElementById("cv").src = cv;
+    </script>
   </body>
 </html>

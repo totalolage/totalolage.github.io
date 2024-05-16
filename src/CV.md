@@ -1,4 +1,5 @@
 # Filip Kalný
+
 [![Mail to filip@kalny.net](https://img.shields.io/badge/filip%40kalny.net-%23CF4462?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgogIDxwYXRoIGQ9Ik0xLjUgOC42N3Y4LjU4YTMgMyAwIDAgMCAzIDNoMTVhMyAzIDAgMCAwIDMtM1Y4LjY3bC04LjkyOCA1LjQ5M2EzIDMgMCAwIDEtMy4xNDQgMEwxLjUgOC42N1oiIC8+CiAgPHBhdGggZD0iTTIyLjUgNi45MDhWNi43NWEzIDMgMCAwIDAtMy0zaC0xNWEzIDMgMCAwIDAtMyAzdi4xNThsOS43MTQgNS45NzhhMS41IDEuNSAwIDAgMCAxLjU3MiAwTDIyLjUgNi45MDhaIiAvPgo8L3N2Zz4K)](mailto:filip@kalny.net)
 [![Phone +420605501785](https://img.shields.io/badge/%2B420%20605%20501%20785-%23c2ac20?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEuNSA0LjVhMyAzIDAgMCAxIDMtM2gxLjM3MmMuODYgMCAxLjYxLjU4NiAxLjgxOSAxLjQybDEuMTA1IDQuNDIzYTEuODc1IDEuODc1IDAgMCAxLS42OTQgMS45NTVsLTEuMjkzLjk3Yy0uMTM1LjEwMS0uMTY0LjI0OS0uMTI2LjM1MmExMS4yODUgMTEuMjg1IDAgMCAwIDYuNjk3IDYuNjk3Yy4xMDMuMDM4LjI1LjAwOS4zNTItLjEyNmwuOTctMS4yOTNhMS44NzUgMS44NzUgMCAwIDEgMS45NTUtLjY5NGw0LjQyMyAxLjEwNWMuODM0LjIwOSAxLjQyLjk1OSAxLjQyIDEuODJWMTkuNWEzIDMgMCAwIDEtMyAzaC0yLjI1QzguNTUyIDIyLjUgMS41IDE1LjQ0OCAxLjUgNi43NVY0LjVaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIC8+Cjwvc3ZnPgo=)](tel:+420605501785)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/filip-kalny/)
@@ -7,6 +8,7 @@
 ## Skills
 
 ### Languages
+
 <!-- <p class="badge-container"> -->
 <!--     <img class="no-print" src="https://img.shields.io/badge/English_C2-%23000000?style=plastic&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+CjxjbGlwUGF0aCBpZD0icyI+Cgk8cGF0aCBkPSJNMCwwIHYzMCBoNjAgdi0zMCB6Ii8+CjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0idCI+Cgk8cGF0aCBkPSJNMzAsMTUgaDMwIHYxNSB6IHYxNSBoLTMwIHogaC0zMCB2LTE1IHogdi0xNSBoMzAgeiIvPgo8L2NsaXBQYXRoPgo8ZyBjbGlwLXBhdGg9InVybCgjcykiPgoJPHBhdGggZD0iTTAsMCB2MzAgaDYwIHYtMzAgeiIgZmlsbD0iIzAxMjE2OSIvPgoJPHBhdGggZD0iTTAsMCBMNjAsMzAgTTYwLDAgTDAsMzAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+Cgk8cGF0aCBkPSJNMCwwIEw2MCwzMCBNNjAsMCBMMCwzMCIgY2xpcC1wYXRoPSJ1cmwoI3QpIiBzdHJva2U9IiNDODEwMkUiIHN0cm9rZS13aWR0aD0iNCIvPgoJPHBhdGggZD0iTTMwLDAgdjMwIE0wLDE1IGg2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+Cgk8cGF0aCBkPSJNMzAsMCB2MzAgTTAsMTUgaDYwIiBzdHJva2U9IiNDODEwMkUiIHN0cm9rZS13aWR0aD0iNiIvPgo8L2c+PC9zdmc+" alt="English C2" /> -->
 <!--     <span class="print-only">English C2</span> -->
@@ -26,7 +28,6 @@
 <!--     <span class="print-only">Bash</span> -->
 <!-- </p> -->
 
-
 ![English C2](https://img.shields.io/badge/English_C2-%23C8102E?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+CjxjbGlwUGF0aCBpZD0icyI+Cgk8cGF0aCBkPSJNMCwwIHYzMCBoNjAgdi0zMCB6Ii8+CjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0idCI+Cgk8cGF0aCBkPSJNMzAsMTUgaDMwIHYxNSB6IHYxNSBoLTMwIHogaC0zMCB2LTE1IHogdi0xNSBoMzAgeiIvPgo8L2NsaXBQYXRoPgo8ZyBjbGlwLXBhdGg9InVybCgjcykiPgoJPHBhdGggZD0iTTAsMCB2MzAgaDYwIHYtMzAgeiIgZmlsbD0iIzAxMjE2OSIvPgoJPHBhdGggZD0iTTAsMCBMNjAsMzAgTTYwLDAgTDAsMzAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+Cgk8cGF0aCBkPSJNMCwwIEw2MCwzMCBNNjAsMCBMMCwzMCIgY2xpcC1wYXRoPSJ1cmwoI3QpIiBzdHJva2U9IiNDODEwMkUiIHN0cm9rZS13aWR0aD0iNCIvPgoJPHBhdGggZD0iTTMwLDAgdjMwIE0wLDE1IGg2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+Cgk8cGF0aCBkPSJNMzAsMCB2MzAgTTAsMTUgaDYwIiBzdHJva2U9IiNDODEwMkUiIHN0cm9rZS13aWR0aD0iNiIvPgo8L2c+PC9zdmc+)
 ![Czech native](https://img.shields.io/badge/Czech_native-%2311457E?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4KCTxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjZDcxNDFhIi8+Cgk8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2ZmZiIvPgoJPHBhdGggZD0iTSA0NTAsMzAwIDAsMCBWIDYwMCB6IiBmaWxsPSIjMTE0NTdlIi8+Cjwvc3ZnPg==)
 <br />
@@ -37,6 +38,7 @@
 [![Bash](https://img.shields.io/badge/Bash-%234EAA25?style=plastic&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 
 ### Frameworks
+
 <!-- <p class="badge-container"> -->
 <!--     <img class="no-print" src="https://img.shields.io/badge/React-%2361DAFB?style=plastic&logo=react&logoColor=black" alt="React" /> -->
 <!--     <span class="print-only">React</span> -->
@@ -48,12 +50,12 @@
 <!--     <span class="print-only">Express</span> -->
 <!-- </p> -->
 
-
 [![React](https://img.shields.io/badge/React-%2361DAFB?style=plastic&logo=react&logoColor=black)](https://reactjs.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-%23000000?style=plastic&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Express](https://img.shields.io/badge/Express-%23000000?style=plastic&logo=express&logoColor=white)](https://expressjs.com/)
 
 ### Libraries
+
 <!-- <p class="badge-container"> -->
 <!--     <img class="no-print" src="https://img.shields.io/badge/GraphQL-%23E10098?style=plastic&logo=graphql&logoColor=white" alt="GraphQL" /> -->
 <!--     <span class="print-only">GraphQL</span> -->
@@ -98,6 +100,7 @@
 [![TypeORM](https://img.shields.io/badge/TypeORM-%23202021?style=plastic&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAY1JREFUWEfllr1NA0EQhb+XE7gICrALgBYwJSAawCkBKQlCZCT8iApwDVCAEcRIdGCEkBABGhhrTzqt9s6+tfBasOHdzsybNz/7ROGjwvFZfwBmNgJOgZGks0UZMzPzu5Jak2z9WTkJQbMAzAPRCMDMesAUeJa0uWjm9XtmdgsMgUNJxykfbQCSFJrZG/AVOes1UT2vFDkA+sAkzuZ/AZD0ENV6Vq5Uw/1KCVIA/lYJ6vMfZxbthor5bUn3qTFr8zUrWVcjMztI2JxL+mzwdQHsNy2k3DF8iYJNV9oDxZuwOIDim7A4A6sCsAXcAWNJuznPsdtkr+K6cRFBUmVc22RZimgpSZZLexe79VTF8YPjNEbfXgHXjH7GP3thJwhgv+dqqR9s3iVthH46SKnq1rcgOHFR6eKyOoPaInKZfiXpKQRxuXYtaRAA+/ScAJfARxaAahoiFlwRzbJMKCP/d+PBzGwoyRnyccxjIAFg4IuoVhIPcAQ8BpCTwIBL+r1sAF06eZm76zkFy2TU1fYb11RiMAYPUKkAAAAASUVORK5CYII=)](https://typeorm.io/)
 
 ### Tools
+
 <!-- <p class="badge-container"> -->
 <!--     <img class="no-print" src="https://img.shields.io/badge/Git-%23F05032?style=plastic&logo=git&logoColor=white" alt="Git" /> -->
 <!--     <span class="print-only">Git</span> -->
