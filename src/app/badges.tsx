@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, Fragment } from "react";
 import Badge from "~/components/Badge";
 import { cn } from "~/utils/cn";
 
@@ -25,22 +25,13 @@ const badgeIcons = {
 type TBadgeCollection = ComponentPropsWithoutRef<typeof Badge>[];
 
 function BadgeCollection({ badges }: { badges: TBadgeCollection }) {
-  const badgeWithSeparatorClassname = "badge-with-separator";
   return (
     <div className="flex flex-wrap gap-1">
-      <style>
-        {`
-          span.${badgeWithSeparatorClassname}:not(:first-of-type)::before {
-            content: " · ";
-          }
-        `}
-      </style>
       {badges.map((badge, index) => (
-        <Badge
-          key={index}
-          {...badge}
-          className={cn(badgeWithSeparatorClassname, badge.className)}
-        />
+        <Fragment key={badge.label}>
+          {index > 0 && <span className="screen:hidden">{" • "}</span>}
+          <Badge {...badge} />
+        </Fragment>
       ))}
     </div>
   );
