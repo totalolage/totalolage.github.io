@@ -1,5 +1,8 @@
-import { ComponentType, Fragment, PropsWithChildren } from "react";
-import imageLinkToDataUri from "~/utils/imageLinkToDataUri";
+/* eslint-disable @next/next/no-img-element */
+
+const kB = 2 ** 10;
+// Inline at most 2kB
+const MAX_SIZE_TO_INLINE = 2 * kB;
 
 type Props = {
   className?: string;
@@ -33,16 +36,23 @@ export default async function Badge({
   if (logo) badgeUrl.searchParams.set("logo", logo);
   if (logoColor) badgeUrl.searchParams.set("logoColor", logoColor);
 
-  const imageDataUri = await imageLinkToDataUri(badgeUrl);
+  const response = await fetch(badgeUrl.toString());
+  const img = await response.blob();
 
-  const Wrapper: ComponentType<PropsWithChildren> = href
-    ? ({ children }) => <a href={href}>{children}</a>
-    : ({ children }) => <Fragment>{children}</Fragment>;
-
-  return (
-    <Wrapper>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className={className} src={imageDataUri} alt={label} />
-    </Wrapper>
-  );
+  let out;
+  if (img.size < MAX_SIZE_TO_INLINE) {
+    const asBuffer = new Uint8Array(await img.arrayBuffer());
+    const base64 = Buffer.from(asBuffer).toString("base64");
+    out = (
+      <img
+        alt={label}
+        src={`data:${img.type};base64,${base64}`}
+        className={className}
+      />
+    );
+  } else {
+    out = <img alt={label} className={className} src={badgeUrl.toString()} />;
+  }
+  if (href) return <a href={href}>{out}</a>;
+  return out;
 }
