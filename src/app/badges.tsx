@@ -154,7 +154,7 @@ export const frameworkBadges = (
       {
         label: "React",
         href: "https://reactjs.org/",
-        color: "#61DAFB",
+        color: "#58C4DC",
         variant: "plastic",
         logo: "react",
         logoColor: "white",
