@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { ComponentType, ReactNode } from "react";
+import { cn } from "~/utils/cn";
+
 const kB = 2 ** 10;
 // Inline at most 2kB
 const MAX_SIZE_TO_INLINE = 2 * kB;
@@ -12,6 +15,7 @@ type Props = {
   logo?: string;
   logoColor?: string;
   message?: string;
+  printContent?: ReactNode;
   variant?: "plastic" | "flat" | "flat-square" | "for-the-badge" | "social";
 };
 
@@ -23,6 +27,7 @@ export default async function Badge({
   logo,
   logoColor,
   message,
+  printContent,
   variant,
 }: Props) {
   const badgeUrl = new URL(
@@ -39,20 +44,49 @@ export default async function Badge({
   const response = await fetch(badgeUrl.toString());
   const img = await response.blob();
 
-  let out;
+  let BadgeEl: ComponentType<{ className?: string }>;
   if (img.size < MAX_SIZE_TO_INLINE) {
     const asBuffer = new Uint8Array(await img.arrayBuffer());
     const base64 = Buffer.from(asBuffer).toString("base64");
-    out = (
-      <img
-        alt={label}
-        src={`data:${img.type};base64,${base64}`}
-        className={className}
-      />
-    );
+    BadgeEl = function BadgeEl({ className }) {
+      return (
+        <img
+          alt={label}
+          src={`data:${img.type};base64,${base64}`}
+          className={className}
+        />
+      );
+    };
   } else {
-    out = <img alt={label} className={className} src={badgeUrl.toString()} />;
+    BadgeEl = function BadgeEl({ className }) {
+      return (
+        <img alt={label} className={className} src={badgeUrl.toString()} />
+      );
+    };
   }
-  if (href) return <a href={href}>{out}</a>;
-  return out;
+
+  const BadgeElLinkable: typeof BadgeEl = function BadgeElWithLink() {
+    const badgeClass = cn("print:hidden", className);
+    if (!href) return <BadgeEl className={badgeClass} />;
+    return (
+      <a href={href} className={badgeClass}>
+        <BadgeEl />
+      </a>
+    );
+  };
+
+  const TextEl = function TextEl() {
+    return (
+      <span className={cn("screen:sr-only", className)}>
+        {printContent ?? label}
+      </span>
+    );
+  };
+
+  return (
+    <>
+      <BadgeElLinkable className={cn("print:hidden", className)} />
+      <TextEl />
+    </>
+  );
 }
