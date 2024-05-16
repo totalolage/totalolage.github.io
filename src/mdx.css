@@ -384,7 +384,7 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 0;
   font-weight: var(--base-text-weight-semibold, 600);
   line-height: 1.25;
@@ -682,6 +682,10 @@
 
 .markdown-body table th {
   font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.markdown-body table th:empty {
+  display: none;
 }
 
 .markdown-body table th,
