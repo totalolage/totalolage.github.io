@@ -5,7 +5,10 @@ import { PropsWithChildren } from "react";
 import favicon from "./favicon.svg";
 import { cn } from "~/utils/cn";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  display: "block",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Filip Kalný",
