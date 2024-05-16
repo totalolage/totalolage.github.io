@@ -11,7 +11,7 @@ const epilogue = Epilogue({
 const barlow = Barlow({
   display: "swap",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "600"],
 });
 
 const headingFont = epilogue.className;
