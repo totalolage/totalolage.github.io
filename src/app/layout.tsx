@@ -1,14 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
 import favicon from "./favicon.svg";
-import { cn } from "~/utils/cn";
-
-const inter = Inter({
-  display: "block",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Filip Kalný",
@@ -20,12 +13,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <head>
         <link rel="icon" href={favicon.src} />
       </head>
-      <body
-        className={cn(
-          inter.className,
-          "flex min-h-full justify-center bg-slate-50 px-4 py-6 dark:bg-slate-800 print:contents",
-        )}
-      >
+      <body className="flex min-h-full justify-center bg-slate-50 px-4 py-6 dark:bg-slate-800 print:contents">
         {children}
       </body>
     </html>
