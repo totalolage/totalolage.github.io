@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "rm -rf out/_next/static/chunks/",
-    "start": "next start"
+    "postbuild": "find out -type f -name '*.js' -exec rm -vf {} +"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.0.2",
