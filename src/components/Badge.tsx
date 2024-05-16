@@ -2,23 +2,25 @@ import { ComponentType, Fragment, PropsWithChildren } from "react";
 import imageLinkToDataUri from "~/utils/imageLinkToDataUri";
 
 type Props = {
-  style: "plastic" | "flat" | "flat-square" | "for-the-badge" | "social";
-  label: string;
-  message?: string;
+  className?: string;
   color: string;
+  href?: string;
+  label: string;
   logo?: string;
   logoColor?: string;
-  href?: string;
+  message?: string;
+  variant?: "plastic" | "flat" | "flat-square" | "for-the-badge" | "social";
 };
 
 export default async function Badge({
-  style,
-  label,
+  className,
   color,
-  message,
+  href,
+  label,
   logo,
   logoColor,
-  href,
+  message,
+  variant,
 }: Props) {
   const badgeUrl = new URL(
     `https://img.shields.io/badge/${[label, message, color]
@@ -27,7 +29,7 @@ export default async function Badge({
       .join("-")}`,
   );
 
-  badgeUrl.searchParams.set("style", style);
+  if (variant) badgeUrl.searchParams.set("style", variant);
   if (logo) badgeUrl.searchParams.set("logo", logo);
   if (logoColor) badgeUrl.searchParams.set("logoColor", logoColor);
 
@@ -40,8 +42,7 @@ export default async function Badge({
   return (
     <Wrapper>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={imageDataUri} alt={label} />
-      <pre>{badgeUrl.toString()}</pre>
+      <img className={className} src={imageDataUri} alt={label} />
     </Wrapper>
   );
 }
