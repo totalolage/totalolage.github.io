@@ -2,6 +2,11 @@
   "name": "filip.kalny.net",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://filip.kalny.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/totalolage/totalolage.github.io"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,6 +17,7 @@
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.3",
+    "@tailwindcss/container-queries": "^0.1.1",
     "@total-typescript/ts-reset": "^0.5.1",
     "clsx": "^2.1.1",
     "next": "14.2.3",
