@@ -10,12 +10,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="bg-bg-light bg-gradient-to-b from-bg-light to-bg-footer-light bg-fixed dark:bg-bg-dark dark:from-bg-dark dark:to-bg-footer-dark"
+    >
       <head>
         <link rel="icon" href={favicon.src} />
+        <meta name="theme-color" content="var(--tw-bg-light)" />
+        <meta
+          name="theme-color"
+          content="var(--tw-bg-dark)"
+          media="(prefers-color-scheme: dark)"
+        />
       </head>
       <body className="contents">
-        <main className="flex min-h-full justify-center bg-slate-50 px-4 py-6 dark:bg-slate-800 print:contents">
+        <main className="flex min-h-full justify-center px-4 py-6 print:contents">
           {children}
         </main>
         <Footer className="sticky bottom-0" />
