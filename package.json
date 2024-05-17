@@ -9,8 +9,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "postbuild": "find out -type f -name '*.js' -exec rm -vf {} +"
+    "build": "next build"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.0.2",
