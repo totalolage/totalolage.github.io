@@ -1,6 +1,5 @@
 import { ComponentPropsWithoutRef, Fragment } from "react";
 import Badge from "~/components/Badge";
-import { cn } from "~/utils/cn";
 
 const badgeIcons = {
   mail: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgogIDxwYXRoIGQ9Ik0xLjUgOC42N3Y4LjU4YTMgMyAwIDAgMCAzIDNoMTVhMyAzIDAgMCAwIDMtM1Y4LjY3bC04LjkyOCA1LjQ5M2EzIDMgMCAwIDEtMy4xNDQgMEwxLjUgOC42N1oiIC8+CiAgPHBhdGggZD0iTTIyLjUgNi45MDhWNi43NWEzIDMgMCAwIDAtMy0zaC0xNWEzIDMgMCAwIDAtMyAzdi4xNThsOS43MTQgNS45NzhhMS41IDEuNSAwIDAgMCAxLjU3MiAwTDIyLjUgNi45MDhaIiAvPgo8L3N2Zz4K",
@@ -165,6 +164,22 @@ export const frameworkBadges = (
         color: "#58C4DC",
         variant: "plastic",
         logo: "react",
+        logoColor: "white",
+      },
+      {
+        label: "Sanity",
+        href: "https://www.sanity.io/",
+        color: "#F24F14",
+        variant: "plastic",
+        logo: "sanity",
+        logoColor: "white",
+      },
+      {
+        label: "Strapi",
+        href: "https://strapi.io/",
+        color: "#4945ff",
+        variant: "plastic",
+        logo: "strapi",
         logoColor: "white",
       },
       {
