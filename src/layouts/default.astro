@@ -32,23 +32,36 @@ const verticalAlignClass = {
 
   {
     footer && (
-      <footer class="flex flex-wrap justify-center space-x-4 bg-bg-footer-light px-8 py-4 text-slate-400 sticky bottom-0 dark:bg-bg-footer-dark print:hidden">
-        <a
-          href={packageJson.repository.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
-        >
-          <span class="sr-only">GitHub</span>
-          <GithubIcon class="size-8" />
-        </a>
-        <button
-          data-print-button
-          class="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
-        >
-          <span class="sr-only">Print</span>
-          <PrinterIcon class="size-8" />
-        </button>
+      <footer class="flex justify-between place-items-center space-x-4 bg-bg-footer-light px-8 py-4 text-slate-400 sticky bottom-0 dark:bg-bg-footer-dark print:hidden">
+        <div class="flex place-items-center space-x-4">
+          <a href="https://astro.build">
+            <img
+              src="https://astro.badg.es/v2/built-with-astro/tiny.svg"
+              alt="Built with Astro"
+              width="120"
+              height="20"
+            />
+          </a>
+        </div>
+
+        <div class="flex place-items-center space-x-4">
+          <a
+            href={packageJson.repository.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+          >
+            <span class="sr-only">GitHub</span>
+            <GithubIcon class="size-8" />
+          </a>
+          <button
+            data-print-button
+            class="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+          >
+            <span class="sr-only">Print</span>
+            <PrinterIcon class="size-8" />
+          </button>
+        </div>
       </footer>
     )
   }
