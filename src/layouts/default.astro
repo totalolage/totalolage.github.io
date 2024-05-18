@@ -32,7 +32,12 @@ const verticalAlignClass = {
 
   {
     footer && (
-      <footer class="flex justify-between place-items-center space-x-4 bg-bg-footer-light px-8 py-4 text-slate-400 sticky bottom-0 dark:bg-bg-footer-dark print:hidden">
+      <footer class:list={[
+        "flex justify-between place-items-center space-x-4 px-8 py-4 text-slate-400 sticky bottom-0",
+        "bg-bg-footer-light dark:bg-bg-footer-dark",
+        "2xl:bg-transparent 2xl:dark:bg-transparent",
+        "print:hidden",
+      ]}>
         <div class="flex place-items-center space-x-4">
           <a href="https://astro.build">
             <img
