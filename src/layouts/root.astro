@@ -1,0 +1,47 @@
+---
+export interface Props {
+  title?: string | undefined;
+}
+
+const { title } = Astro.props;
+
+const pageTitle = [title, "Filip Kalný"].filter(Boolean).join(" | ");
+---
+
+<!doctype html>
+<html lang="en" class="bg-bg-light bg-gradient-to-b from-bg-light to-bg-footer-light bg-fixed dark:bg-bg-dark dark:from-bg-dark dark:to-bg-footer-dark">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+
+    <title>{pageTitle}</title>
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="theme-color" content="var(--tw-bg-light)" />
+    <meta
+      name="theme-color"
+      content="var(--tw-bg-dark)"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+  <body class="flex flex-col min-h-full">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html {
+    height: 100%;
+  }
+</style>

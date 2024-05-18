@@ -1,0 +1,78 @@
+---
+import type { AstroVNode } from "astro/jsx-runtime";
+
+const kB = 2 ** 10;
+// Inline at most 2kB
+const MAX_SIZE_TO_INLINE = 2 * kB;
+
+export interface Props {
+  className?: string | undefined;
+  color: string | undefined;
+  href?: string | undefined;
+  label: string | undefined;
+  logo?: string | undefined;
+  logoColor?: string | undefined;
+  message?: string | undefined;
+  printContent?: AstroVNode | undefined;
+  variant?:
+    | "plastic"
+    | "flat"
+    | "flat-square"
+    | "for-the-badge"
+    | "social"
+    | undefined;
+}
+
+const {
+  className,
+  color,
+  href,
+  label,
+  logo,
+  logoColor,
+  message,
+  printContent,
+  variant,
+} = Astro.props;
+
+const badgeUrl = new URL(
+  `https://img.shields.io/badge/${[label, message, color]
+    .filter(Boolean)
+    .map(encodeURIComponent)
+    .join("-")}`,
+);
+
+if (variant) badgeUrl.searchParams.set("style", variant);
+if (logo) badgeUrl.searchParams.set("logo", logo);
+if (logoColor) badgeUrl.searchParams.set("logoColor", logoColor);
+
+const response = await fetch(badgeUrl.toString());
+const img = await response.blob();
+
+let badgeSrc: string;
+if (img.size < MAX_SIZE_TO_INLINE) {
+  const asBuffer = new Uint8Array(await img.arrayBuffer());
+  const base64 = Buffer.from(asBuffer).toString("base64");
+  badgeSrc = `data:${img.type};base64,${base64}`;
+} else {
+  badgeSrc = badgeUrl.toString();
+}
+
+const badgeClassList = ["print:hidden", className];
+const textClassList = ["screen:sr-only", className];
+---
+
+<>
+  {
+    href ? (
+      <a href={href} class:list={badgeClassList}>
+        <img src={badgeSrc} alt={label} />
+      </a>
+    ) : (
+      <img src={badgeSrc} alt={label} class:list={badgeClassList} />
+    )
+  }
+  <span class:list={textClassList}>
+    {printContent ?? label}
+  </span>
+</>

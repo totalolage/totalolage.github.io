@@ -1,0 +1,63 @@
+---
+import packageJson from "package.json";
+
+import RootLayout, { type Props as RootProps } from "@layouts/root.astro";
+
+import GithubIcon from "@icons/Github.astro";
+import PrinterIcon from "@icons/Printer.astro";
+
+export type Props = RootProps & {
+  footer?: boolean | undefined;
+  verticalAlign?: "top" | "center" | "bottom" | undefined;
+};
+
+const { verticalAlign = "top", footer = false, ...props } = Astro.props;
+
+const verticalAlignClass = {
+  top: "justify-start",
+  center: "justify-center",
+  bottom: "justify-end",
+}[verticalAlign];
+---
+
+<RootLayout {...props}>
+  <main
+    class:list={[
+      "flex flex-col flex-1 px-4 py-6 print:contents",
+      verticalAlignClass,
+    ]}
+  >
+    <slot />
+  </main>
+
+  {
+    footer && (
+      <footer class="flex flex-wrap justify-center space-x-4 bg-bg-footer-light px-8 py-4 text-slate-400 sticky bottom-0 dark:bg-bg-footer-dark print:hidden">
+        <a
+          href={packageJson.repository.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+        >
+          <span class="sr-only">GitHub</span>
+          <GithubIcon class="size-8" />
+        </a>
+        <button
+          data-print-button
+          class="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+        >
+          <span class="sr-only">Print</span>
+          <PrinterIcon class="size-8" />
+        </button>
+      </footer>
+    )
+  }
+</RootLayout>
+
+<script>
+  document
+    .querySelector("[data-print-button]")
+    ?.addEventListener("click", () => {
+      window.print();
+    });
+</script>

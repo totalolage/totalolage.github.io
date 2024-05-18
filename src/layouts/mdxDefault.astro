@@ -1,0 +1,19 @@
+---
+import "@styles/mdx.css";
+
+import DefaultLayout  from "@layouts/default.astro";
+
+import type { MarkdownLayoutProps } from "astro";
+
+export type Props = MarkdownLayoutProps<Record<string, string>>;
+
+const {
+  frontmatter: { title },
+} = Astro.props;
+---
+
+<DefaultLayout title={title} verticalAlign="center" footer>
+  <article class="markdown-body place-self-center w-[120ch] max-w-full rounded-3xl px-12 pb-20 pt-12 text-lg shadow-lg print:contents print:text-sm">
+    <slot />
+  </article>
+</DefaultLayout>

@@ -1,0 +1,28 @@
+---
+import Badge, { type Props as BadgeProps } from "@components/Badge.astro";
+import badgePresets from "@data/badge-presets";
+
+type BadgePreset = keyof typeof badgePresets;
+
+export interface Props {
+  badges: (BadgeProps | BadgePreset)[];
+  class?: string | undefined;
+}
+
+const { badges, class: className } = Astro.props;
+---
+
+<div class:list={["flex flex-wrap gap-1", className]}>
+  {
+    badges.map((badge, index) => {
+      const badgeProps =
+        typeof badge === "string" ? badgePresets[badge] : badge;
+      return (
+        <>
+          {index > 0 && <span class="screen:hidden">{" • "}</span>}
+          <Badge {...badgeProps} />
+        </>
+      );
+    })
+  }
+</div>

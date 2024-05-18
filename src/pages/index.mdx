@@ -1,0 +1,121 @@
+---
+layout: "@layouts/mdxDefault.astro"
+title: "Resumé"
+author: "Filip Kalný"
+description: "My personal resumé"
+date: "2024-05-18"
+---
+import { AstroFont } from "astro-font";
+
+<AstroFont
+  config={[
+    {
+      src: [],
+      name: "Barlow Condensed",
+      googleFontsURL: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600",
+      preload: true,
+      display: "swap",
+      selector: ".markdown-body",
+      fallback: "sans-serif",
+    },
+    {
+      src: [],
+      name: "Epilogue",
+      googleFontsURL: "https://fonts.googleapis.com/css2?family=Epilogue:wght@0,100..900",
+      preload: true,
+      display: "swap",
+      selector: ".markdown-body :is(h1,h2,h3,h4,h5,h6)",
+      fallback: "sans-serif",
+    }
+  ]}
+/>
+
+import Badges from "@components/Badges.astro";
+import badgeIcons from "@icons/badges";
+
+# Filip Kalný
+
+<Badges
+  badges={[
+    {
+      label: "filip@kalny.net",
+      logo: badgeIcons.mail,
+      href: "mailto:filip@kalny.net",
+      printContent: "E-mail: filip@kalny.net",
+      color: "#CF4462",
+      variant: "for-the-badge",
+    },
+    {
+      label: "+420 605 501 785",
+      logo: badgeIcons.phone,
+      color: "#c2ac20",
+      printContent: "Phone: +420 605 501 785",
+      variant: "for-the-badge",
+      href: "tel:+420605501785",
+    },
+    {
+      label: "Signal",
+      href: "https://signal.me/#eu/lFOYxORo/LmI1L+XCERaYqMkASrbNUF9wbf18DxHg7/th/LZOFRO5rSGloRse5BE",
+      printContent: "Signal: @totalolage.01",
+      color: "#3A76F0",
+      variant: "for-the-badge",
+      logo: "signal",
+      logoColor: "white",
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/filip-kalny/",
+      printContent: "LinkedIn: @filip-kalny",
+      color: "#0077B5",
+      variant: "for-the-badge",
+      logo: "linkedin",
+      logoColor: "white",
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/totalolage",
+      printContent: "GitHub: @totalolage",
+      color: "#181717",
+      variant: "for-the-badge",
+      logo: "github",
+      logoColor: "white",
+    },
+  ]}
+/>
+
+## Skills
+
+export const humanLanguageBadges = ["english", "czech"];
+export const programmingLanguageBadges = ["typescript", "javascript", "html", "css", "bash"];
+export const frameworkBadges = ["next", "react", "strapi", "sanity", "astro", "express"];
+export const libraryBadges = ["reactHookForm", "zod", "reactQuery", "graphql", "zustand", "tailwind", "i18next", "emotion", "jest", "reactTestingLibrary", "axios", "storybook", "typeorm"];
+export const toolBadges = ["git", "neovim", "arch", "docker", "figma", "node", "github", "copilot", "vercel", "nginx", "nx", "bun", "ubuntu", "turborepo", "digitalocean"];
+
+|             |                                                                                                   |
+|-------------|---------------------------------------------------------------------------------------------------|
+| Languages   | <Badges class="mb-2" badges={humanLanguageBadges} /><Badges badges={programmingLanguageBadges} /> |
+| Frameworks  | <Badges badges={frameworkBadges} />                                                               |
+| Libraries   | <Badges badges={libraryBadges} />                                                                 |
+| Tools       | <Badges badges={toolBadges} />                                                                    |
+
+## Experience
+
+- Publically traded US corporation 2023-ongoing
+  - **E-commerce web** [Frontend + Backend for frontend, team of 6-10]
+
+- Thimble (agency) 2020-ongoing
+  - Circularo
+    - **Mobile web application**: app.circularo.com [Frontend + Backend for frontend, solo] (mobile, EOL)
+    - **Landing page**: circularo.com [Frontend + Devops, team of 2]
+  - **Unikol**: unikol.cz [Frontend + Devops, team of 3]
+  - **Galerie Gema**: gemagalerie.cz [solo] (unreleased)
+  - **"Chytré Spolubydlení" a matchmaker for flatmates** [Fullstack, team of 2] (internal, unfinished)
+  - **Thimble landing page v2** [Frontend, solo] (unreleased)
+
+- AtomRTC 2019-2020
+  - **Šetři Chytře**: utilities comparison calculator: setrichytre.cz [Frontend, solo] (EOL)
+  - **LiveSupp**: customer support live chat: livesupp.com [Frontend, team of 3-5]
+
+- Freelance
+  - **Orientation event "Prefilda"** for student's club of FF UK: weffuk.cz [Fullstack + Devops, solo] (seasonal)
+  - **Stromy Třeboňska** for the town of Třeboň: stromytrebonska.cz [Fullstack + Devops, solo] (EOL)

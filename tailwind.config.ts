@@ -1,9 +1,8 @@
 import type { Config } from "tailwindcss";
-import containerPlugin from "@tailwindcss/container-queries";
 import exposeColorsPlugin from "@tailwind-plugin/expose-colors";
 
-const config: Config = {
-  content: ["./src/**/*.{ts,tsx,mdx}"],
+export default {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       screens: {
@@ -18,7 +17,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [containerPlugin, exposeColorsPlugin()],
-};
-
-export default config;
+  plugins: [
+    exposeColorsPlugin(),
+  ],
+} satisfies Config;
