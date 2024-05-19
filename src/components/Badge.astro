@@ -1,5 +1,6 @@
 ---
 import type { AstroVNode } from "astro/jsx-runtime";
+import { parse as parseSvg, type ElementNode } from "svg-parser";
 
 export interface Props {
   className?: string | undefined;
@@ -48,21 +49,13 @@ const img = await response.blob();
 const asUintArray = new Uint8Array(await img.arrayBuffer());
 const asBuffer = Buffer.from(asUintArray);
 
-const dimensionsAsStr = asBuffer
-  .toString("utf8")
-  .match(
-    /<svg [^>]*width="(?<width>[^"]+)"[^>]*height="(?<height>[^"]+)"[^>]*>/,
-  )?.groups;
-
-let width, height;
-if (dimensionsAsStr) {
-  const widthStr = dimensionsAsStr.width;
-  const heightStr = dimensionsAsStr.height;
-  if (widthStr && heightStr) {
-    width = parseInt(widthStr, 10);
-    height = parseInt(heightStr, 10);
-  }
-}
+const svgRoot = parseSvg(asBuffer.toString());
+const svgProperties = svgRoot.children.find(
+  (child): child is ElementNode =>
+    child.type === "element" && child.tagName === "svg",
+)?.properties;
+const width = svgProperties?.width;
+const height = svgProperties?.height;
 
 const base64 = asBuffer.toString("base64");
 const badgeSrc = `data:${img.type};base64,${base64}`;
