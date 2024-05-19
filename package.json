@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "filip.kalny.net",
+  "description": "Filip Kalný's resume site",
   "type": "module",
   "private": true,
   "version": "3.2.1",
