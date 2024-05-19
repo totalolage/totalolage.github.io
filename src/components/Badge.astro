@@ -1,10 +1,6 @@
 ---
 import type { AstroVNode } from "astro/jsx-runtime";
 
-const kB = 2 ** 10;
-// Inline at most 2kB
-const MAX_SIZE_TO_INLINE = 2 * kB;
-
 export interface Props {
   className?: string | undefined;
   color: string | undefined;
@@ -49,14 +45,10 @@ if (logoColor) badgeUrl.searchParams.set("logoColor", logoColor);
 const response = await fetch(badgeUrl.toString());
 const img = await response.blob();
 
-let badgeSrc: string;
-if (img.size < MAX_SIZE_TO_INLINE) {
-  const asBuffer = new Uint8Array(await img.arrayBuffer());
-  const base64 = Buffer.from(asBuffer).toString("base64");
-  badgeSrc = `data:${img.type};base64,${base64}`;
-} else {
-  badgeSrc = badgeUrl.toString();
-}
+const asUintArray = new Uint8Array(await img.arrayBuffer());
+const asBuffer = Buffer.from(asUintArray);
+const base64 = asBuffer.toString("base64");
+const badgeSrc = `data:${img.type};base64,${base64}`;
 
 const badgeClassList = ["print:hidden", className];
 const textClassList = ["screen:sr-only", className];
