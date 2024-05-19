@@ -47,21 +47,45 @@ const img = await response.blob();
 
 const asUintArray = new Uint8Array(await img.arrayBuffer());
 const asBuffer = Buffer.from(asUintArray);
+
+const dimensionsAsStr = asBuffer
+  .toString("utf8")
+  .match(
+    /<svg [^>]*width="(?<width>[^"]+)"[^>]*height="(?<height>[^"]+)"[^>]*>/,
+  )?.groups;
+
+let width, height;
+if (dimensionsAsStr) {
+  const widthStr = dimensionsAsStr.width;
+  const heightStr = dimensionsAsStr.height;
+  if (widthStr && heightStr) {
+    width = parseInt(widthStr, 10);
+    height = parseInt(heightStr, 10);
+  }
+}
+
 const base64 = asBuffer.toString("base64");
 const badgeSrc = `data:${img.type};base64,${base64}`;
 
 const badgeClassList = ["print:hidden", className];
 const textClassList = ["screen:sr-only", className];
+
+const imgProps = {
+  src: badgeSrc,
+  alt: label,
+  width,
+  height,
+};
 ---
 
 <>
   {
     href ? (
       <a href={href} class:list={badgeClassList}>
-        <img src={badgeSrc} alt={label} />
+        <img {...imgProps} />
       </a>
     ) : (
-      <img src={badgeSrc} alt={label} class:list={badgeClassList} />
+      <img {...imgProps} class:list={badgeClassList} />
     )
   }
   <span class:list={textClassList}>
