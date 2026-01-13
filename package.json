@@ -1,11 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "filip.kalny.net",
+  "name": "filip.is-a.dev",
   "description": "Filip Kalný's resume site",
   "type": "module",
   "private": true,
   "version": "3.2.1",
-  "homepage": "https://filip.kalny.net",
+  "homepage": "https://filip.is-a.dev",
   "repository": {
     "type": "git",
     "url": "https://github.com/totalolage/totalolage.github.io"
