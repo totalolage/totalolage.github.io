@@ -31,7 +31,38 @@ import { AstroFont } from "astro-font";
 />
 
 import Badges from "@components/Badges.astro";
+import Company from "@components/Company.astro";
 import badgeIcons from "@icons/badges";
+
+export const firstProfessionalRoleYear = 2019;
+export const yearsOfExperience = new Date().getFullYear() - firstProfessionalRoleYear;
+
+export const companies = {
+  deutscheBoerse: {
+    name: "Deutsche Börse",
+    href: "https://www.deutsche-boerse.com/",
+    logo: "/logos/deutsche-boerse.svg",
+  },
+  groupon: {
+    name: "Groupon",
+    href: "https://www.groupon.com/",
+    logo: "/logos/groupon.svg",
+  },
+  thimble: {
+    name: "Thimble",
+    href: "https://thimble.cz/",
+    logo: "/logos/thimble-light.png",
+    printLogo: "/logos/thimble-dark.png",
+  },
+  atomrtc: {
+    name: "AtomRTC",
+    logo: "/logos/livesupp.ico",
+  },
+  freelance: {
+    name: "Freelance",
+    monogram: "F",
+  },
+};
 
 # Filip Kalný
 
@@ -88,9 +119,9 @@ import badgeIcons from "@icons/badges";
 export const contactBadges = ["email", "phone", "signal", "linkedin", "githubContact"];
 export const humanLanguageBadges = ["english", "czech"];
 export const programmingLanguageBadges = ["typescript", "javascript", "html", "css", "bash"];
-export const frameworkBadges = ["next", "react", "effect", "sanity", "strapi", "astro", "express"];
-export const libraryBadges = ["reactHookForm", "zod", "reactQuery", "graphql", "zustand", "tailwind", "i18next", "paraglide", "socketio", "emotion", "jest", "reactTestingLibrary", "axios", "storybook", "typeorm"];
-export const toolBadges = ["git", "claudeCode", "neovim", "arch", "macos", "docker", "figma", "node", "github", "copilot", "vercel", "nginx", "nx", "bun", "ubuntu", "turborepo", "digitalocean"];
+export const frameworkBadges = ["next", "react", "tanstackStart", "effect", "sanity", "strapi", "astro", "express"];
+export const libraryBadges = ["reactHookForm", "zod", "reactQuery", "tanstackTable", "tanstackForm", "graphql", "protobuf", "zustand", "tailwind", "i18next", "paraglide", "socketio", "websockets", "emotion", "jest", "reactTestingLibrary", "axios", "storybook", "drizzle", "typeorm"];
+export const toolBadges = ["git", "opencode", "neovim", "arch", "macos", "docker", "figma", "node", "github", "copilot", "vercel", "nginx", "nx", "bun", "ubuntu", "turborepo", "claudeCode", "digitalocean"];
 
 |             |                                                                                                   |
 |-------------|---------------------------------------------------------------------------------------------------|
@@ -101,13 +132,14 @@ export const toolBadges = ["git", "claudeCode", "neovim", "arch", "macos", "dock
 
 ## Experience
 
-| Dates | Role | Project(s) | Company | Technologies |
-|-------|------|---------|---------|--------------|
-| 2023-2025 | IC, Tech Lead on Checkout Team | Ecommerce Checkout & Post-purchase experience | Groupon | Next, React, Typescript, NX, Apollo, GraphQL, Tailwind, Adyen, React Testing Library, Jest, Playwright, Zustand, Storybook | 
-| 2020-2023 | Fullstack developer | Circularo mobile web app, Unikol web, Galerie Gema auction site + others | Thimble | Next, React, Typescript, Tailwind, React Query, Apollo, GraphQL, Socket.io, Emotion, TypeORM, Styled Components, Nodemailer, PostgreSQL |
-| 2019-2020 | Frontend developer | LiveSupp customer support live chat, Šetři Chytře utilities comparison calculator | AtomRTC | React, Styled Components |
-| 2017-ongoing | Freelancer | Stromy Třeboňska, Prefilda FF UK + others + misc. consulting/auditing | Freelance | Bun, Drizzle, Convex, MySQL, Wordpress, PHP |
+| Company | Dates | Role | Project(s) | Technologies |
+|---------|-------|------|------------|--------------|
+| <Company name={companies.deutscheBoerse.name} href={companies.deutscheBoerse.href} logo={companies.deutscheBoerse.logo} /> | Q1-Q2 2026 | Lead Product Engineer | Internal market administration tool | Effect, TypeScript, React, protobuf, WebSockets |
+| <Company name={companies.groupon.name} href={companies.groupon.href} logo={companies.groupon.logo} /> | 2023-2025 | IC, Tech Lead on Checkout Team | Ecommerce Checkout & Post-purchase experience | Next, React, Typescript, NX, Apollo, GraphQL, Tailwind, Adyen, React Testing Library, Jest, Playwright, Zustand, Storybook |
+| <Company name={companies.thimble.name} href={companies.thimble.href} logo={companies.thimble.logo} printLogo={companies.thimble.printLogo} /> | 2020-2023 | Fullstack IC | Circularo mobile web app, Unikol web, Galerie Gema auction site + others | Next, React, Typescript, Tailwind, React Query, Apollo, GraphQL, Socket.io, Emotion, TypeORM, Styled Components, Nodemailer, PostgreSQL |
+| <Company name={companies.atomrtc.name} logo={companies.atomrtc.logo} /> | 2019-2020 | Frontend IC | LiveSupp customer support live chat, Šetři Chytře utilities comparison calculator | React, Styled Components |
+| <Company name={companies.freelance.name} monogram={companies.freelance.monogram} /> | 2017-ongoing | Freelancer | Deskohub cowork, Deskohub bar, Prefilda FF UK + others + misc. consulting/auditing | Bun, Drizzle, Convex, MySQL, Wordpress, PHP, others... |
 
 ## About me
 
-Senior full‑stack web engineer (6+ years) focused on building dependable, observable, and maintainable web applications. I combine reliability-by-design, end‑to‑end type safety, and metrics‑driven iteration; as tech lead for a checkout overhaul at Groupon, I helped deliver a double‑digit revenue increase. I’m eager to try new technologies, but deliberate in production; validating them in low‑risk prototypes first, then adopting only when the benefits outweigh the costs and fit the constraints. I champion incremental releases and experimentation (A/B testing) to drive measurable outcomes. Seeking to contribute to dynamic, high‑growth products.
+Senior full-stack engineer ({yearsOfExperience}+ years) focused on dependable, observable, and maintainable web products. I specialize in end-to-end type-safe systems and have owned product delivery from analyst input through launch. At Groupon Checkout, my tech lead work centered on technical decisions, implementation quality, and release gating for an initiative that contributed to a double-digit revenue increase.

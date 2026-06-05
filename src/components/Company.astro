@@ -1,0 +1,47 @@
+---
+export interface Props {
+  href?: string | undefined;
+  logo?: string | undefined;
+  name: string;
+  monogram?: string | undefined;
+  printLogo?: string | undefined;
+}
+
+const { href, logo, name, monogram = name.slice(0, 1), printLogo } = Astro.props;
+---
+
+<a href={href} class:list={[!href && "pointer-events-none text-inherit"]}>
+  <span class="inline-flex items-center gap-2 whitespace-nowrap align-middle">
+    {
+      logo ? (
+        <>
+          <img
+            src={logo}
+            alt=""
+            class:list={[
+              "h-5 w-5 rounded-sm bg-transparent object-contain",
+              printLogo && "print:hidden",
+            ]}
+            loading="lazy"
+          />
+          {printLogo && (
+            <img
+              src={printLogo}
+              alt=""
+              class="hidden h-5 w-5 rounded-sm bg-transparent object-contain print:block"
+              loading="lazy"
+            />
+          )}
+        </>
+      ) : (
+        <span
+          aria-hidden="true"
+          class="inline-grid h-5 w-5 place-items-center rounded-sm bg-slate-200 text-[0.65em] font-semibold text-slate-600 dark:bg-slate-700 dark:text-slate-200"
+        >
+          {monogram}
+        </span>
+      )
+    }
+    <span>{name}</span>
+  </span>
+</a>

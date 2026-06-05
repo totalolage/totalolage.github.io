@@ -698,6 +698,11 @@
   border: 1px solid var(--color-border-default);
 }
 
+.markdown-body h2#experience + table th:first-child,
+.markdown-body h2#experience + table td:first-child {
+  min-width: 12rem;
+}
+
 .markdown-body table td>:last-child {
   margin-bottom: 0;
 }
@@ -1204,4 +1209,3 @@
 .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: var(--color-danger-fg);
 }
-
